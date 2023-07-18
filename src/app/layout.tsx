@@ -20,8 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <main className="min-h-screen bg-slate-200 dark:bg-gray-500 px-24 py-12">
-            <section className="flex justify-end">
+          <main className="min-h-screen bg-slate-200 dark:bg-gray-600 px-4 py-4 md:px-24 md:py-12">
+            <section className="flex justify-end mb-4">
               <ThemeToggle />
             </section>
             <section className="flex flex-col items-center justify-center">

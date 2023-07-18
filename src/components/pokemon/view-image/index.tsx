@@ -14,18 +14,20 @@ const ViewImage = ({ srcs }: { srcs: string[] }) => {
   };
 
   return (
-    <Image
-      className="w-full cursor-pointer"
-      src={imgSrc}
-      alt="pokemon avatar"
-      width={384}
-      height={384}
-      loading="lazy"
-      placeholder="blur"
-      blurDataURL="/default-sm.png"
-      onClick={changeImageSource}
-      style={{ maxHeight: '384px', width: '384px' }}
-    />
+    <div className="flex justify-center">
+      <Image
+        className="w-full cursor-pointer"
+        src={imgSrc}
+        alt="pokemon avatar"
+        width={384}
+        height={384}
+        loading="lazy"
+        placeholder="blur"
+        blurDataURL="/default-sm.png"
+        onClick={changeImageSource}
+        style={{ maxHeight: '384px', width: '384px' }}
+      />
+    </div>
   );
 };
 

@@ -58,7 +58,7 @@ export default async function Home({ searchParams }: PageProps) {
     <>
       <Pagination next={Boolean(data.next)} previous={Boolean(data.previous)} />
       <div className="mb-4"></div>
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-4 lg:text-left">
+      <div className="w-full mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-4 lg:text-left">
         {pokemons.map((pokemon) => {
           const { name } = pokemon;
           return (

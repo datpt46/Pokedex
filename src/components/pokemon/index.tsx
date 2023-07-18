@@ -2,7 +2,7 @@ import ViewImage from './view-image';
 
 const Pokemon = async ({ data }: { data: ResponsePokemon }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="w-full rounded overflow-hidden shadow-lg">
       <ViewImage
         srcs={[
           data.sprites.other['official-artwork'].front_default ??
@@ -31,7 +31,7 @@ const Pokemon = async ({ data }: { data: ResponsePokemon }) => {
           return (
             <span
               key={slot}
-              className="inline-block bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2"
+              className="inline-block bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2"
             >
               {type.name}
             </span>
